@@ -482,9 +482,9 @@ body .our__team .display .pic__team ul li .overlay__team {
   background-repeat: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  opacity: 1;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
