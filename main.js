@@ -22,15 +22,69 @@ const data = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
     },
     {
-        "name": "Gustavo Herrique",
-        "function": "BackEnd",
-        "subtitle": "We have the best team of this Universe!",
-        "description": "ipsum Lorem"
-    }
+        "name": "João Ferreira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "Abigail Bell",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "Arlen Silva",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "William Pereira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "William Pereira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "William Pereira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "William Pereira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "William Pereira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "William Pereira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
+	{
+        "name": "William Pereira",
+        "function": "FrontEnd",
+        "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
+    },
 ];
 
 const defaultData =  {
-        "name": "Our Team",
+        "name": "Our Team &#128520;",
         "subtitle": "We have the best team of this Universe!",
     }
 
@@ -44,6 +98,7 @@ inputs.forEach(input => {
 
 
 const profileTeam = document.querySelectorAll('.person__team');
+const detailTeam = document.querySelector('.detail__team ')
 
 const titleTeam = document.querySelector('.title__team');
 const functionTeam = document.querySelector('.function__team');
@@ -56,6 +111,7 @@ profileTeam.forEach((tab, index) => {
 	tab.addEventListener('mouseover', () => {
 		tab.classList.add('active')
 
+			detailTeam.classList.add('animation')
 			titleTeam.innerHTML = data[index].name
 			functionTeam.innerHTML = data[index].function
 			subtitleTeam.innerHTML = data[index].subtitle
@@ -65,7 +121,7 @@ profileTeam.forEach((tab, index) => {
 
 	tab.addEventListener('mouseout', () => {
 		tab.classList.remove('active')
-
+		detailTeam.classList.remove('animation')
 		titleTeam.innerHTML = defaultData.name
 		subtitleTeam.innerHTML = defaultData.subtitle
 	})
