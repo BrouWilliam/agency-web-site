@@ -13,9 +13,8 @@ function remcl(){
 	}
 }
 
-
 const data = [
-	{
+    {
         "name": "William Pereira",
         "function": "FrontEnd",
         "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
@@ -80,14 +79,13 @@ const data = [
         "function": "FrontEnd",
         "subtitle": "&#8220;Uma vida calma e modesta traz mais felicidade do que a busca do sucesso combinada com constante inquietação!&#8221;",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veniam maiores beatae quisquam unde, blanditiis consequuntur ipsa itaque nisi amet enim, sed odio voluptatum! Laborum beatae dolorem deserunt dignissimos quod."
-    },
-];
+    }
+]
 
 const defaultData =  {
         "name": "Our Team &#128520;",
         "subtitle": "We have the best team of this Universe!",
-    }
-
+}
 
 
 inputs.forEach(input => {
@@ -128,3 +126,18 @@ profileTeam.forEach((tab, index) => {
 
 })
 
+
+// Our services
+
+let contentService = document.querySelectorAll('.content_services');
+const content_service = document.querySelectorAll('.content_service');
+
+for(let i = 0; i < contentService.length; i++){
+	contentService[i].onclick = function(){
+		let j = 0;
+		while (j < contentService.length){
+			contentService[j++].className = 'content_services'
+		}
+		contentService[i].classList.add('active')
+	}
+}

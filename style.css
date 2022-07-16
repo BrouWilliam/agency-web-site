@@ -35,6 +35,61 @@
   left: 0;
 }
 
+body nav {
+  max-width: 900px;
+  margin: 1rem auto;
+}
+
+body nav .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .content ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+body nav .content ul li a {
+  text-decoration: none;
+  color: #0E121B;
+}
+
+body nav .content ul li.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .content ul li.project a img {
+  padding-left: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body nav .content ul li.project a:hover img {
+  padding-left: 0.5rem;
+}
+
 body header {
   height: 100vh;
   background-color: #FFF;
@@ -236,7 +291,17 @@ body .about__us .flex .content__desc p {
   max-width: 500px;
   font-size: 1.5rem;
   line-height: 1.2;
-  color: #4C565C;
+  color: #4c565c7e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 290px;
 }
 
 body .our__services {
@@ -244,39 +309,40 @@ body .our__services {
   padding: 3rem;
 }
 
-body .our__services .row {
+body .our__services .content__flex .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
 
-body .our__services .row .content_services {
+body .our__services .content__flex .row .content_services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
 }
 
-body .our__services .row .content_services .service__content {
+body .our__services .content__flex .row .content_services .service__content {
   background-color: #F6F5F8;
   padding: 1.5rem;
   max-width: 100px;
+  cursor: pointer;
 }
 
-body .our__services .row .content_services .service__content h4 {
+body .our__services .content__flex .row .content_services .service__content h4 {
   font-size: 2.25rem;
   font-weight: 500;
 }
 
-body .our__services .row .content_services .service__content .line {
+body .our__services .content__flex .row .content_services .service__content .line {
   margin: 1rem auto;
   background-color: #737373;
   height: 1px;
   width: 100%;
 }
 
-body .our__services .row .content_services .service__content p {
+body .our__services .content__flex .row .content_services .service__content p {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -286,44 +352,44 @@ body .our__services .row .content_services .service__content p {
   color: #737373;
 }
 
-body .our__services .row .content_services .content_service {
+body .our__services .content__flex .row .content_services .content_service {
   background-color: #141414;
   padding: 50px;
   max-width: 600px;
   display: none;
 }
 
-body .our__services .row .content_services .content_service.show {
-  display: block;
-}
-
-body .our__services .row .content_services .content_service h4 {
+body .our__services .content__flex .row .content_services .content_service h4 {
   color: #FFF;
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
-body .our__services .row .content_services .content_service h5 {
+body .our__services .content__flex .row .content_services .content_service h5 {
   color: #FFF;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1;
 }
 
-body .our__services .row .content_services .content_service h5 span {
+body .our__services .content__flex .row .content_services .content_service h5 span {
   font-size: 1.25rem;
 }
 
-body .our__services .row .content_services .content_service .line {
+body .our__services .content__flex .row .content_services .content_service .line {
   width: 100%;
   height: 1px;
   background-color: #FFF;
   margin: 2rem 0;
 }
 
-body .our__services .row .content_services .content_service p {
+body .our__services .content__flex .row .content_services .content_service p {
   color: #FFF;
+}
+
+body .our__services .content__flex .row .content_services.active .content_service {
+  display: block;
 }
 
 body .our__team {
